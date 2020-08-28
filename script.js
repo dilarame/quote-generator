@@ -1,8 +1,8 @@
-const  quoteContainer = document.getElementById('quote-container');
-const  quoteText = document.getElementById('quote');
-const  authorText = document.getElementById('author');
-const  twitterBtn = document.getElementById('twitter');
-const  newQuoteBtn = document.getElementById('new-quote');
+const quoteContainer = document.getElementById('quote-container');
+const quoteText = document.getElementById('quote');
+const authorText = document.getElementById('author');
+const twitterBtn = document.getElementById('twitter');
+const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
 function showLoadingSpinner() {
@@ -20,7 +20,6 @@ function removeLoadingSpinner() {
 var count = 0;
 
 // Get Quote from API
-
 async function getQuote() {
     showLoadingSpinner();
     const proxyUrl = 'https://gentle-waters-49097.herokuapp.com/'
